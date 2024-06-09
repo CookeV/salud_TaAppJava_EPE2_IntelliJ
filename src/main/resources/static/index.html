@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución de Salud</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<h1>Administración de Institución de Salud</h1>
+
+<section id="especialidades">
+    <h2>Especialidades</h2>
+    <form id="especialidadForm">
+        <input type="text" id="especialidadNombre" placeholder="Nombre de la Especialidad" required>
+        <button type="submit">Agregar Especialidad</button>
+    </form>
+    <ul id="especialidadesList"></ul>
+</section>
+
+<section id="medicos">
+    <h2>Médicos</h2>
+    <form id="medicoForm">
+        <input type="text" id="medicoNombre" placeholder="Nombre del Médico" required>
+        <select id="medicoEspecialidad">
+            <option value="" disabled selected>Seleccione Especialidad</option>
+        </select>
+        <button type="submit">Agregar Médico</button>
+    </form>
+    <ul id="medicosList"></ul>
+</section>
+
+<section id="pacientes">
+    <h2>Pacientes</h2>
+    <form id="pacienteForm">
+        <input type="text" id="pacienteNombre" placeholder="Nombre del Paciente" required>
+        <input type="date" id="pacienteFechaNacimiento" required>
+        <button type="submit">Agregar Paciente</button>
+    </form>
+    <ul id="pacientesList"></ul>
+</section>
+
+<section id="diagnosticos">
+    <h2>Diagnósticos</h2>
+    <form id="diagnosticoForm">
+        <input type="text" id="diagnosticoNombre" placeholder="Nombre del Diagnóstico" required>
+        <button type="submit">Agregar Diagnóstico</button>
+    </form>
+    <ul id="diagnosticosList"></ul>
+</section>
+
+<section id="ingresos">
+    <h2>Ingresos</h2>
+    <form id="ingresoForm">
+        <select id="ingresoPaciente">
+            <option value="" disabled selected>Seleccione Paciente</option>
+        </select>
+        <select id="ingresoMedico">
+            <option value="" disabled selected>Seleccione Médico</option>
+        </select>
+        <select id="ingresoEspecialidad">
+            <option value="" disabled selected>Seleccione Especialidad</option>
+        </select>
+        <select id="ingresoDiagnostico">
+            <option value="" disabled selected>Seleccione Diagnóstico</option>
+        </select>
+        <input type="date" id="ingresoFechaIngreso" required>
+        <input type="date" id="ingresoFechaAlta">
+        <button type="submit">Agregar Ingreso</button>
+    </form>
+    <ul id="ingresosList"></ul>
+</section>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
